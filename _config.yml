@@ -6,7 +6,6 @@ url:
 
 baseurl: ""
 
-markdown: redcarpet
 highlighter: pygments
 permalink: /:title/
 sass:
