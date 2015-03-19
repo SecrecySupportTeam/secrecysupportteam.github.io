@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  {% include ghead.html %}
+  <body>
+    <style>
+        #mobile-bar{
+            text-align:center;
+            vertical-align:middle;
+        }
+        #mobile-bar .menu-button{
+            position:relative;
+            border:0;
+            width:30%;
+            top:30%;
+        }
+    </style>
+    <div id="mobile-bar">
+        <button class="menu-button">Menu</button>
+    </div> 
+    <div id="header">
+      {% include gheader.html %}
+    </div>
+
+    <div id="main">
+      <div class="sidebar">
+        {% include pmenu.html  %}
+      </div>
+
+      <div class="content with-sidebar">
+          {{ content }}
+        <div class="footer">
+          {% include gfooter.html %}
+        </div>
+      </div>
+
+    </div>
+  </body>
+  {% include end.html %}
+</html>
