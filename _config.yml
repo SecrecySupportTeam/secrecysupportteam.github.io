@@ -1,0 +1,19 @@
+#
+# Jekyll configurations
+#
+
+url:
+
+baseurl: ""
+
+markdown: redcarpet
+highlighter: pygments
+permalink: /:title/
+sass:
+  style: :compressed
+gems:
+  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
+exclude:
+    - Gemfile
+    - Gemfile.lock
+    - README.md
