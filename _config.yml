@@ -1,18 +1,29 @@
-#
-# Jekyll configurations
-#
+# Site settings
+title: Secrecy Support Team
+subtitle: Defending Your Files
+logo: /img/logo.svg
+favicon: /img/logo.svg
+description: Secrecy is where you can safely put your files without worrying that others will see it.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "" # the base hostname & protocol for your site
 
-url:
 
-baseurl: ""
+permalink: /post/:year/:month/:day/:title.html
+paginate: 1
+paginate_path: blog/page:num
+github: https://github.com/SecrecySupportTeam/secrecy
+footer_github: https://github.com/SecrecySupportTeam/secrecysupportteam.github.io
 
-highlighter: pygments
-permalink: /:title/
-sass:
-  style: :compressed
+
+# Build settings
+markdown: kramdown
+collections:
+  guide:
+    output: true
+    permalink: /guide/:path.html
+
+
+
+
 gems:
-  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
-exclude:
-    - Gemfile
-    - Gemfile.lock
-    - README.md
+  - jekyll-sitemap
