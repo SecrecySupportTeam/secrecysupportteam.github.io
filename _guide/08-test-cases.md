@@ -1,10 +1,10 @@
----  
+---
 title: Test cases
 layout: guide
 date: 2015-03-21
----  
-# Why test cases?  
-  
+---
+# Why test cases?
+
 Secrecy is honestly quite a massive project, where users' files are at risk if version upgrades are not handled correctly, or if the UI is broken and users cannot access their files as they wish. We would like to keep a documented test case database so that we (and any other interested party) can test the product thoroughly before we push the release to production. 
  
 Test cases should be written in a consistent flow (i.e. step 2 can be conducted immediately after step 1.), where an ACTION and a RESPONSE should be listed. 
